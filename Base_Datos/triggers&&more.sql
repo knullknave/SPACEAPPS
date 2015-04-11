@@ -14,6 +14,7 @@ end procedimiento;
 
 --Nº de fotos de un bosque registrado
 
+delimiter |
 create function n_photo (n_name varchar(50))
 returns int
 begin
@@ -24,4 +25,19 @@ set n_p = (select count(p.id)
 return n_p;
 end;
 
+--Bosques (nombres) de un país
 
+delimiter '@'
+create function c_forest (c_country varchar(50))
+returns varchar(60)
+begin
+declare f_name varchar(60);
+set f_name = (select name from forest where c_country=country);
+return f_name;
+end;
+@
+delimiter ;
+	
+	
+	
+	
