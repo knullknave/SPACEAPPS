@@ -5,10 +5,14 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 ---*/
 html, body{
+    margin: o auto;
+    text-align: center;
 	font-family: 'Questrial', sans-serif;
 	font-size: 100%;
 	background:#fff; 
 }
+body
+
 body a{
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -68,12 +72,13 @@ a:hover {
 	position: fixed;
 }
 .cbp-spmenu h3 {
-	  color: #000;
-	  font-size: 1.9em;
-	  padding: 20px;
-	  margin: 0;
-	  font-weight: 300;
-	  background: #7ab800;
+	color: #000;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #7ab800;
+	font-family: inherit;
 }
 .cbp-spmenu a {
 	display: block;
@@ -596,6 +601,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .elvis-grid:hover div.caption{
 	display:block;
 	transform:;
+
 }
 .caption{
 	position: absolute;
@@ -1727,6 +1733,7 @@ ul.pr-list li {
 	}
 	.elvis-grid:hover div.caption {
 		display: none;
+        
 	}
 	.caption h3 {
 		font-size: 13px;
@@ -1806,4 +1813,7 @@ ul.pr-list li {
 	  margin-top: 1em;
 	  text-align: center;
 	}
+}
+div {
+    color: aqua;
 }

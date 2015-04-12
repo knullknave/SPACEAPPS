@@ -4,7 +4,8 @@ use forest_monitor;
 create table if not exists users
 (
   id int unsigned auto_increment primary key,
-  email varchar(50) unique not null
+  email varchar(50) unique not null,
+  pass varchar(16) not null
 );
 
 create table if not exists forest
@@ -21,11 +22,8 @@ create table if not exists photo
   id int unsigned auto_increment primary key,
   name varchar(50) not null,
   tamano varchar(50) not null,
-  coment varchar(140),
-  coords varchar(50) not null,
-  latitud double,
-  longitud double,
-  link varchar(255),
+  px varchar(50) not null,
+  comentario varchar(140),
   id_users int unsigned,
   index (id_users),
   foreign key (id_users)

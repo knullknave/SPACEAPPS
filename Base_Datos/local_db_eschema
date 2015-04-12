@@ -1,3 +1,0 @@
-user(#id,name,surname,nick,comment,email);
-photo(#id,name,size,px,comment,-id_user,-id_forest);
-forest(#id,name,country,state,coords);
